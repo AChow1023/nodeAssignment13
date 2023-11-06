@@ -37,14 +37,14 @@ const showCharacters = async () => {
         
         let img = document.createElement("img");
         section.append(img);
-        img.src = "http://localhost:3000/" + character.img;
+        img.src = "http://localhost:3001/" + character.img;
 
     });
 };
 
 const getJSON = async () => {
     try{
-        return (await fetch("http://localhost:3000/api/characters")).json();
+        return (await fetch("http://localhost:3001/api/characters")).json();
     }
     catch(error){
         console.log("error retrieving json");
