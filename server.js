@@ -49,7 +49,7 @@ app.get("/api/characters", (req, res)=> {
         img: "images/robinSPic.png"
     };
 
-    res.json(characters);
+    res.send(characters);
 });
 
 app.listen(3001, () => {
