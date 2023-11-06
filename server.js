@@ -52,6 +52,6 @@ app.get("/api/characters", (req, res)=> {
     res.json(characters);
 });
 
-app.listen(3001, () => {
+app.listen(3000, () => {
 
 });
