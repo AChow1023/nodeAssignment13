@@ -37,7 +37,7 @@ const showCharacters = async () => {
         
         let img = document.createElement("img");
         section.append(img);
-        img.src = "http://localhost:3001/" + character.img;
+        img.src = character.img;
 
     });
 };
