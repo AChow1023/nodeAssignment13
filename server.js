@@ -14,7 +14,7 @@ app.get("/api/characters", (req, res)=> {
         hair: "black",
         role: "Captain",
         power: "Gum-Gum fruit",
-        img: "images/luffyPic.jfif"
+        img: "/images/luffyPic.jfif"
     };
     characters[1] = {
         name: "Roronoa Zoro",
@@ -22,7 +22,7 @@ app.get("/api/characters", (req, res)=> {
         hair: "green",
         role: "second-in-command",
         power: "three sword style",
-        img: "images/zoroPic.jfif"
+        img: "/images/zoroPic.jfif"
     };
     characters[2] = {
         name: "Nami",
@@ -30,7 +30,7 @@ app.get("/api/characters", (req, res)=> {
         hair: "orange",
         role: "navigator",
         power: "N/A",
-        img: "images/namiSPic.png"
+        img: "/images/namiSPic.png"
     };
     characters[3] = {
         name: "Usopp",
@@ -38,7 +38,7 @@ app.get("/api/characters", (req, res)=> {
         hair: "black",
         role: "sniper",
         power: "sniper",
-        img: "images/usoppPic.jfif"
+        img: "/images/usoppPic.jfif"
     };
     characters[4] = {
         name: "Nico Robin",
@@ -46,7 +46,7 @@ app.get("/api/characters", (req, res)=> {
         hair: "black",
         role: "archaeologist",
         power: "Flower-Flower fruit",
-        img: "images/robinSPic.png"
+        img: "/images/robinSPic.png"
     };
 
     res.json(characters);
