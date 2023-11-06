@@ -36,14 +36,14 @@ const showCharacters = async () => {
         
         let img = document.createElement("img");
         section.append(img);
-        img.src = "http://localhost:3000/" + character.img;
+        img.src = "http://localhost:3001/" + character.img;
 
     });
 };
 
 const getJSON = async () => {
     try{
-        let response = await fetch ("http://localhost:3000/api/characters");
+        let response = await fetch ("http://localhost:3001/api/characters");
         return await response.json();
     }
     catch(error){
