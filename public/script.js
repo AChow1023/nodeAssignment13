@@ -1,6 +1,7 @@
 const showCharacters = async () => {
     const characterJSON = await getJSON();
     if(characterJSON == ""){
+        console.log("invalid load of json");
         return;
     }
     
@@ -43,8 +44,7 @@ const showCharacters = async () => {
 
 const getJSON = async () => {
     try{
-        let response = await fetch ("http://localhost:3001/api/characters");
-        return await response.json();
+        return (await fetch("http://localhost:3000/api/animals")).json();
     }
     catch(error){
         console.log("error retrieving json");
@@ -52,6 +52,4 @@ const getJSON = async () => {
     }
 }
 
-window.onload = () => {
-    showCharacters();
-}
+window.onload = () => showCharacters();
