@@ -44,7 +44,7 @@ const showCharacters = async () => {
 
 const getJSON = async () => {
     try{
-        return (await fetch("http://localhost:3001/api/characters")).json();
+        return (await fetch("/api/characters")).json();
     }
     catch(error){
         console.log("error retrieving json");
